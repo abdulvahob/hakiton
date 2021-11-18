@@ -1,0 +1,355 @@
+/* Dropdown Button */
+.dropbtn {
+  background-color: var(--black);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  transition: var(--transition);
+  width: 115px !important;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  transition: var(--transition);
+  width: 115px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--exLight);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content li {
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {
+  background-color: #ddd;
+  transition: var(--transition);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: inline-block;
+  transition: var(--transition);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  transition: var(--transition);
+  background-color: var(--cyan);
+}
+
+/* Grafik Dizayn */
+/* Dropdown Button */
+.dropbtn1 {
+  background-color: var(--lightBlack);
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px 7px;
+  border-radius: 12px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content1 li:hover {
+  background-color: #ddd;
+  border-bottom: 2px solid var(--cyan);
+  transition: var(--transition);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+  transition: var(--transition);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown1:hover .dropbtn1 {
+  background-color: #3e8e41;
+  transition: var(--transition);
+}
+
+/* Dasturlash */
+/* Dropdown Button */
+.dropbtn2 {
+  background-color: var(--lightBlack);
+  color: white !important;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 15px;
+  padding: 10px 7px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 li {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 li:hover {
+  background-color: #ddd;
+  border-bottom: 2px solid var(--cyan);
+  transition: var(--transition);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown2:hover .dropbtn2 {
+  background-color: #3e8e41;
+}
+.dropbut {
+  padding: 10px;
+  background-color: var(--lightBlack);
+  color: #fff !important;
+}
+.dropdown{
+    cursor: pointer !important;
+    width: 115px;
+}
+
+/* checkbox-dropdown */
+.checkbox-dropdown {
+  background-color: var(--black);
+  color: white;
+  padding: 16px;
+  padding-right: 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+/* Display CSS arrow to the right of the dropdown text */
+.checkbox-dropdown:after {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #fff;
+  top: 50%;
+  right: 6px;
+  margin-top: -3px;
+}
+
+/* Reverse the CSS arrow when the dropdown is active */
+.checkbox-dropdown.is-active:after {
+  border-bottom-color: #fff;
+  border-top-color: var(--black);
+  margin-top: -9px;
+}
+
+.checkbox-dropdown-list {
+  list-style: none;
+  position: absolute;
+  top: 100%; /* align the dropdown right below the dropdown text */
+  border: inherit;
+  border-top: none;
+  background-color: var(--exLight);
+  opacity: 0; /* hide the dropdown */
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none; /* avoid mouse click events inside the dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  padding: 10px;
+}
+.is-active .checkbox-dropdown-list {
+  opacity: 1; /* display the dropdown */
+  pointer-events: auto; /* make sure that the user still can select checkboxes */
+}
+.checkbox-dropdown-list li {
+  padding: 10px 15px;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+.checkbox-dropdown-list li:hover {
+  background-color: #ddd;
+  transition: var(--transition);
+  cursor: pointer;
+}
+/* checkbox-dropdown end */
+/* checkbox-dropdown1 */
+.checkbox-dropdown1 {
+  padding: 16px;
+  padding-right: 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+.checkbox-dropdown1:after {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #000;
+  /* top: 50%; */
+  right: 30px;
+  /* margin-top: -3px; */
+}
+.checkbox-dropdown1.is-active:after {
+  border-bottom-color: #000;
+  border-top-color: #ddd;
+  margin-top: -9px;
+}
+.checkbox-dropdown-list1 {
+  list-style: none;
+  position: absolute;
+  /* top: 100%; align the dropdown right below the dropdown text */
+  border: inherit;
+  border-top: none;
+  background-color: var(--exLight);
+  opacity: 0; /* hide the dropdown */
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none; /* avoid mouse click events inside the dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  padding: 10px;
+}
+.is-active > .checkbox-dropdown-list1 {
+  opacity: 1; /* display the dropdown */
+  pointer-events: auto; /* make sure that the user still can select checkboxes */
+}
+.checkbox-dropdown-list1 li {
+  padding: 10px 15px;
+  color: black;
+  margin-bottom: 10px;
+  text-decoration: none;
+  display: block;
+  border-radius: 15px;
+}
+.checkbox-dropdown-list1 li:hover {
+  background-color: #ddd;
+  transition: var(--transition);
+  cursor: pointer;
+}
+/* checkbox-dropdown1 end */
+/* checkbox-dropdown2 */
+.checkbox-dropdown2 {
+  padding: 16px;
+  padding-right: 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+.checkbox-dropdown2:after {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+  border: 6px solid transparent;
+  border-top-color: #000;
+  /* top: 50%; */
+  right: 30px;
+  /* margin-top: -3px; */
+}
+.checkbox-dropdown1.is-active:after {
+  border-bottom-color: #000;
+  border-top-color: #ddd;
+  margin-top: -9px;
+}
+.checkbox-dropdown-list2 {
+  list-style: none;
+  position: absolute;
+  /* top: 100%; align the dropdown right below the dropdown text */
+  border: inherit;
+  border-top: none;
+  background-color: var(--exLight);
+  opacity: 0; /* hide the dropdown */
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none; /* avoid mouse click events inside the dropdown */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+  padding: 10px;
+}
+.is-active > .checkbox-dropdown-list2 {
+  opacity: 1; /* display the dropdown */
+  pointer-events: auto; /* make sure that the user still can select checkboxes */
+}
+
+
+/* checkbox-dropdown2 end */
